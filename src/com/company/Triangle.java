@@ -81,6 +81,7 @@ public class Triangle {
         points.addAll(adjusted);
     }
 
+    @Override
     public String toString()
     {
         StringBuilder sb = new StringBuilder();

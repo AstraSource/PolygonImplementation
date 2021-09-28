@@ -4,11 +4,14 @@ import java.util.ArrayList;
 
 public class Rectangle extends Triangle {
 
-    protected String name = "Rectangle";
-
+    public Rectangle()
+    {
+        super();
+        name = "Rectangle";
+    }
     public Rectangle(Vector2d p1, Vector2d p2, Vector2d p3, Vector2d p4) throws Exception {
         points = new ArrayList<>();
-
+        name = "Rectangle";
         Construct(p1, p2, p3, p4);
     }
 

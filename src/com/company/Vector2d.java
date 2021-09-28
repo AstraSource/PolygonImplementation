@@ -68,6 +68,7 @@ public class Vector2d {
         return sqrt(pow(this.x,2) + pow(this.y,2));
     }
 
+    @Override
     public String toString()
     {
         return "X: " + String.format("%.2f",this.x) + " Y: " + String.format("%.2f",this.y);
@@ -94,6 +95,7 @@ public class Vector2d {
         this.Set(length * cos(curAngle), length * sin(curAngle));
     }
 
+    @Override
     public Vector2d clone() {
         return new Vector2d(this.x, this.y);
     }
